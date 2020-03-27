@@ -33,11 +33,11 @@ Lo más rápido es hacerlo sobre **Docker**.
 * Antes de arrancarlo es conveniete instalarle el motor de plantillas Twig.
 	* Para ello copiamos el contenido del fichero del repositorio *`./código/bin/webserver/Dockerfile`* y lo copiamos **al final** de nuestro fichero *`docker-compose-lamp/bin/webserver/Dockerfile`*
 	* Si ya habéis arrancado con la orden `docker-compose-up`:
-		* Si lo habéis hecho con la opción `-d`, ejecutad `sudo docker-compose-down`,
+		* Si lo habéis hecho con la opción `-d`, ejecutad `sudo docker-compose down`,
 		* Si **NO** habéis utilizado la opción `-d`, parad la ejecución con `ctrl + c` o `ctrl + d` y esperad a que se pare.
 		* Ahora hacer `sudo docker-compose build`.
 
-* Para enterarnos mejor de la comunicación entre contenedores he creado una red virtual y le he asignado una ip a cada contenedor. Fíjate en el archivo *`./código/docker-compose.yml`* y haz los cambios pertinentes en tu fichero fijándote al inicio del archivo y cuando se use el campo `networks`.
+* Para enterarnos mejor de la comunicación entre contenedores, he creado una red virtual y le he asignado una ip a cada contenedor. Fíjate en el archivo *`./código/docker-compose.yml`* y haz los cambios pertinentes en tu fichero fijándote al inicio del archivo y cuando se use el campo `networks`.
 
 ### Configuración de la base de datos
 
@@ -87,7 +87,7 @@ Buscamos el arhivo `./código/chat_prueba.sql`, aceptamos y le damos a *go* al f
 
 ### El código de la página
 
-La chica, el código, está en:
+La chicha, el código, está en:
 
 	./código/www
 
