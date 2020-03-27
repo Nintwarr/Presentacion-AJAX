@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		{% block titulo %}
+			<title>Chat con AJAX</title>
+		{% endblock %}
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap">
+		<link rel="stylesheet" href="../reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		{% block estilos %}
+		{% endblock %}
+		<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+	 	{% block bibliotecasJs %} {% endblock %}
+	</head>
+	<body id="cuerpo">
+		{% block cuerpo %}
+		<p class="usuario-actual">Usuario actual: <span class="nombre-usuario">{{ usuario_actual }}</span></p>
+		<div class="caja-chat">
+			<div id="caja_mensajes" class="mensajes"></div>
+			<textarea id="caja_texto" class="caja-texto" placeholder="Escribe algo (pulsa enter para enviar)"></textarea>
+		</div>
+		<button id="cambiar_cuenta" class="cambiar-cuenta" type="button" name="cambiar"> <p>Cambiar cuenta</p> </button>
+		{% endblock %}
+	</body>
+	{% block scripts %}
+	<script type="text/javascript" src="js/chat.js"></script>
+	{% endblock %}
+</html>

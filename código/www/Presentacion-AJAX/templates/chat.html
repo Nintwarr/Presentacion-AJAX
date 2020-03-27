@@ -1,0 +1,6 @@
+{% for mensaje in mensajes %}
+	<div class="mensaje">
+		<h3 class="usuario">Usuario: <span class="nombre-usuario">{{ mensaje.Nick }}</span></h3>
+		<p class="texto">{{ mensaje.Texto }}</p>
+	</div>
+{% endfor %}

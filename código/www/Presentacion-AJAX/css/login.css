@@ -1,0 +1,52 @@
+.caja-formulario {
+	--ancho: 50vw;
+	--alto: 40vh;
+
+	position:absolute;
+	width: var(--ancho);
+	height: var(--alto);
+	top: calc((100vh - var(--alto)) / 2);
+	left: calc((100vw - var(--ancho)) / 2);
+	background-color: grey;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.titulo-login {
+	margin-bottom: 3rem;
+}
+
+.explicacion-login {
+	margin-bottom: 3rem;
+}
+
+.texto-login {
+	width: 40%;
+	clear: right;
+	margin: auto;
+	margin-bottom: 1.5rem;
+}
+
+.boton-registro {
+	font-weight: bold;
+	display: block;
+	margin: auto;
+	width: 40%;
+	height: 4rem;
+	margin-bottom: 3rem;
+}
+
+.boton-registro p {
+	margin:auto;
+}
+
+.cargando {
+	display: none;
+	font-weight: bold;
+}
+
+.error-registro {
+	display: none;
+	font-weight: bold;
+	color: red;
+}

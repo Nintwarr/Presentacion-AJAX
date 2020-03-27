@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+	{% block titulo %}
+		<title>Chat - Login</title>
+	{% endblock %}
+
+	{% block estilos %}
+		<link rel="stylesheet" href="css/login.css">
+	{% endblock %}
+
+	{% block bibliotecasJs %}
+		<script type="text/javascript" src="js/login.js"></script>
+	{% endblock %}
+
+	{% block cuerpo %}
+		<div class="caja-formulario">
+			<h2 class="titulo-login">Introduce tu usario</h2>
+			<p class="explicacion-login">Si no existe se creará uno nuevo</p>
+			<input id="texto_login" class="texto-login" type="text" name="usuario" placeholder="Nombre de usuario">
+			<button id="boton_registro" class="boton-registro" type="button" name="registrarse" onclick="registrarse()"><p>Iniciar Sesion</p></button>
+			<p class="cargando">Cargando...</p>
+			<p class="error-registro">Error al registrarse</p>
+		</div>
+	{% endblock %}
+
+	{% block scripts %}
+	<!-- Vacío -->
+	{% endblock %}

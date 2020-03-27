@@ -1,0 +1,78 @@
+body {
+	font-family: 'Baloo 2', cursive;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+
+	--outer-width: 60vw;
+	--outer-height: 60vh;
+}
+
+.usuario-actual {
+	position: relative;
+	top: calc(( (100vh - var(--outer-height)) / 2 ) - (( (100vh - var(--outer-height)) / 2 ) / 2));
+	font-size: 1.6rem;
+}
+
+.caja-chat {
+	--inner-width: 100%;
+	--inner-messages-width: 70%;
+	--inner-padding: 1rem;
+
+	position: absolute;
+	display: block;
+	width: var(--outer-width);
+	border: 3px solid deeppink;
+	border-radius: 5px;
+	height: var(--outer-height);
+	padding: 1.5rem;
+	background-image: url(../images/chat-background.jpg);
+	top: calc((100vh - var(--outer-height)) / 2);
+	left: calc((100vw - var(--outer-width)) / 2);
+}
+
+.mensajes {
+	width: var(--inner-width);
+	height: var(--inner-messages-width);
+	overflow-y: auto;
+	margin: auto;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+
+.mensajes .mensaje {
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	padding: var(--inner-padding);
+	margin: 1rem 0;
+}
+
+.nombre-usuario {
+	color: grey;
+	margin: 0.6rem 0;
+	font-weight: bold;
+}
+
+.mensajes .mensaje .texto {
+	text-indent: 1rem;
+	text-align: justify;
+}
+
+.caja-texto {
+	width: var(--inner-width);
+	height: calc((100% - var(--inner-messages-width)) - 5%);
+	padding: var(--inner-padding);
+	border-radius: 5px;
+}
+
+.cambiar-cuenta {
+	--button-width: 40vw;
+	position: absolute;
+	width: var(--button-width);
+	height: 3rem;
+	top: calc(100vh - ((100vh - var(--outer-height)) / 2) + 4rem);
+	left: calc((100vw - var(--button-width)) / 2);
+}
