@@ -51,6 +51,8 @@ Para que esto funcione debemos copiar el contenido del directorio
 Y también copiamos la variable *LPWD* que se declara en *`./código/.env`* al final de nuestro
 fichero *`docker-compose-lamp/.env`*.
 
+No nos podemos olvidar de copiar la declaración del volúmen que se encuentra en el fichero `docker-compose.yml` para el contenedor de phpmyadmin.
+
 Así podremos crear bases de datos o manipular la existente.
 
 ### Importar la base de datos
