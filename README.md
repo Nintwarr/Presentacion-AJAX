@@ -1,3 +1,8 @@
+# Pull Requests
+Acepto PR en la rama **enhance**, por si alguien quiere.
+
+If you wanto to PR, switch ro branch **enhance**
+
 # Ejemplo de la presentación
 
 En la carpeta **código** están los archivos esenciales para reproducir mi ejemplo
